@@ -19,6 +19,7 @@ const Aparat = () => {
             console.log('error')
         }
     }
+    
     useEffect(() => {
         GetVideos()
     }, [])
