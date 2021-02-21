@@ -25,7 +25,6 @@ export default function TodoList(props) {
     const time = Hours + ':' + Minutes;
     const classes = useStyles();
     const todos = props.Todos.todos;
-    console.log(todos);
     const deleteHandler = (id) => {
         props.deleteItem(id)
     }

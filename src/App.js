@@ -12,9 +12,9 @@ class App extends React.Component {
     return (
       <>
         <BrowserRouter>
-          <Route component={Aparat} path="/" exact />
+          <Route component={Todo} path="/" exact />
+          <Route component={Aparat} path="/Aparat" exact />
           <Route component={Users} path="/Users" exact />
-          <Route component={Todo} path="/Todo" exact />
           <Route component={About} path="/About" exact />
           <Route component={Contact} path="/Contact" exact />
         </BrowserRouter>

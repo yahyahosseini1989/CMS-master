@@ -163,8 +163,7 @@ export default function PrimarySearchAppBar() {
   const [drower, setDrower] = useState(false);
 
   const drowerHandler = () => {
-    setDrower(true)
-    console.log(drower)
+    setDrower(!drower)
   }
 
   return (

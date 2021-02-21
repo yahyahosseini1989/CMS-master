@@ -14,7 +14,6 @@ const Aparat = () => {
         try {
             let res = await AllVideos.readApi()
             setRowData(res.data.mostviewedvideos)
-            console.log(rowData);
         } catch (error) {
             console.log('error')
         }
