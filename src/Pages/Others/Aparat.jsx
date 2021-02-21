@@ -19,15 +19,19 @@ const Aparat = () => {
             console.log('error')
         }
     }
-    
+
     useEffect(() => {
         GetVideos()
     }, [])
     // get videos
 
-
     return (
         <Layout>
+            <div style={{ 'text-align': 'center' }}>
+                <h2>Please use <a href="https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc">Moesif CORS</a> to view the information received from the API.</h2>
+                <p style={{ 'margin-bottom': '50px' }}>The most viewed videos on aparat.com are shown in the table below. The information is obtained from the <a href="https://www.aparat.com/etc/api/mostviewedvideos">API</a> with the axios method and is used to display the ag-grid.</p>
+            </div>
+
             <div className="ag-theme-alpine" style={{ 'height': '450px' }}>
                 <AgGridReact
                     rowData={rowData}>
